@@ -5,7 +5,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" href="assets/icons/favicon.svg" />
-		<link rel="stylesheet" crossorigin href="css/tailwind.css" />
+		<link rel="stylesheet" href="css/tailwind.css" />
 		<title>Fastify Email Service</title>
 		<script src="https://cdn.tailwindcss.com"></script>
 		<script src="js/index.js" defer></script>
@@ -62,10 +62,10 @@
 
 		<main>
 			<!-- email dialog (modal window) -->
-			<dialog id="open-modal" class="backdrop:bg-blue-50/50">
+			<dialog id="open-dialog" title="Open" class="backdrop:bg-blue-50/50">
 				<!-- close modal button -->
 				<nav class="flex flex-end mb-8">
-					<button id="close-modal"
+					<button id="close-dialog" type="button"
 						class="ml-auto focus:outline-indigo-300 focus:bg-indigo-100 m-3 border-b-2 border-indigo-400">
 						<svg class="w-4 h-4 fill-indigo-600 stroke-none" viewBox="0 0 24 24">
 							<path fill="none" d="M0 0h24v24H0V0z"></path>
@@ -145,7 +145,7 @@
 						</div>
 						<!-- Submit Button -->
 						<div class="mt-4 space-y-4">
-							<button
+							<button type="submit"
 								class="inline-block rounded-lg w-full bg-indigo-500 px-5 py-3 font-medium text-white">
 								Send Mail
 							</button>

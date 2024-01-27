@@ -3,28 +3,26 @@ console.log("Hello from index.js");
 // Task: Reference Variables
 
 /*
-    Create reference variables for the following:
-    Call to action button (speed-test), the dialog element and the close button inside the dialog.
+        Create reference variables for the following:
+        Call to action button (speed-test), a unique id for the open dialog element prevent default and the close button inside the dialog.
 */
 
-const openDialogButton = document.querySelector("#open-modal");
-const speedTest = document.querySelector("#speed-test");
-const closeButton = document.querySelector("#close-modal");
+const speedTestBtn = document.querySelector("#speed-test");
+console.log(speedTestBtn);
 
-// Task: Add Event Listeners
-// Add an event listener to the call to action button that will open the dialog.
-openDialogButton.addEventListener("submit", onUpdateDialog);
+const dialog = document.querySelector("#open-dialog");
+console.log(dialog);
 
-// Add an event listener to the close button that will close the dialog.
-closeButton.addEventListener("submit", onCloseDialog);
+const closeDialog = document.querySelector("#close-dialog");
+console.log(closeDialog);
 
-// Task: Create Functions
-// Create a function that will open the dialog.
-function onUpdateDialog(e) {
-  speedTest.showModal();
-}
+// Task: Event Listener
+speedTestBtn.addEventListener("click", onHandleChange);
+closeDialog.addEventListener("click", onHandleChange);
 
-// Create a function that will close the dialog.
-function onCloseDialog(e) {
-  speedTest.close();
+// Task: Event Handler
+function onHandleChange(e) {
+  e.preventDefault();
+  console.log(e.target);
+  dialog.classList.toggle("open");
 }
