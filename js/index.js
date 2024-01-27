@@ -1,18 +1,15 @@
 console.log("Hello from index.js");
 
 // Task: Reference Variables
-
 /*
         Create reference variables for the following:
-        Call to action button (speed-test), a unique id for the open dialog element prevent default and the close button inside the dialog.
+        Call to action button (speed-test), a unique id for the open dialog element and the close button inside the dialog.
 */
-
+// Task: Reference Variables
 const speedTestBtn = document.querySelector("#speed-test");
 console.log(speedTestBtn);
-
 const dialog = document.querySelector("#open-dialog");
 console.log(dialog);
-
 const closeDialog = document.querySelector("#close-dialog");
 
 // Task: Event Listener
