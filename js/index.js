@@ -14,7 +14,6 @@ const dialog = document.querySelector("#open-dialog");
 console.log(dialog);
 
 const closeDialog = document.querySelector("#close-dialog");
-console.log(closeDialog);
 
 // Task: Event Listener
 speedTestBtn.addEventListener("click", onHandleChange);
@@ -23,4 +22,9 @@ closeDialog.addEventListener("click", onHandleChange);
 // Task: Event Handler call to action button
 function onHandleChange() {
   dialog.showModal();
+}
+
+// Task: Event Handler close button
+function onHandleChange() {
+  dialog.close();
 }
