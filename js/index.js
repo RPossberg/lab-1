@@ -20,9 +20,7 @@ console.log(closeDialog);
 speedTestBtn.addEventListener("click", onHandleChange);
 closeDialog.addEventListener("click", onHandleChange);
 
-// Task: Event Handler
-function onHandleChange(e) {
-  e.preventDefault();
-  console.log(e.target);
-  dialog.classList.toggle("open");
+// Task: Event Handler call to action button
+function onHandleChange() {
+  dialog.showModal();
 }
