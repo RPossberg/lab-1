@@ -13,10 +13,10 @@ const closeButton = document.querySelector("#close-modal");
 
 // Task: Add Event Listeners
 // Add an event listener to the call to action button that will open the dialog.
-openDialogButton.addEventListener("click", onUpdateDialog);
+openDialogButton.addEventListener("submit", onUpdateDialog);
 
 // Add an event listener to the close button that will close the dialog.
-closeButton.addEventListener("click", onCloseDialog);
+closeButton.addEventListener("submit", onCloseDialog);
 
 // Task: Create Functions
 // Create a function that will open the dialog.
